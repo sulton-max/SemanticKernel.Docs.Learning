@@ -1,50 +1,52 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using Microsoft.SemanticKernel;
-using Microsoft.SemanticKernel.SemanticFunctions;
+﻿using Microsoft.SemanticKernel;
 using Microsoft.Extensions.Configuration;
-using N1.Fundamentals.FirstPrompt;
+using Microsoft.SemanticKernel.SemanticFunctions;
+using Recipes.N1;
 
 // Create configuration
-var configuration = new ConfigurationBuilder()
-    .AddUserSecrets<Program>()
-    .Build();
+var configuration = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 
 // Bind open ai settings
-var openAiSettings = new OpenAiSettings();
-configuration.GetSection(nameof(OpenAiSettings)).Bind(openAiSettings);
+var openAiSettings = new AzureOpenAiSettings();
+configuration.GetSection(nameof(AzureOpenAiSettings)).Bind(openAiSettings);
 
 // Create kernel builder
 var kernelBuilder = Kernel.Builder;
-kernelBuilder.WithOpenAITextCompletionService(openAiSettings.Model, openAiSettings.ApiKey);
 
 // Create kernel
+kernelBuilder.WithAzureChatCompletionService(openAiSettings.DeploymentName,
+    openAiSettings.Endpoint,
+    openAiSettings.ApiKey);
+
+// Build the kernel
 var kernel = kernelBuilder.Build();
 
-// Create prompt config
-var promptConfig = new PromptTemplateConfig
-{
-    Completion =
-    {
-        MaxTokens = 1000,
-        Temperature = 0.2,
-        TopP = 0.5,
-    }
-};
-
-// Create function input template
+// Prompt template string
 var mySemanticFunctionInline = """
                                   {{$input}}
 
                                   Summarize the content above in less than 140 characters.
                                   """;
 
-// Create semantic function
-var promptTemplate = new PromptTemplate(mySemanticFunctionInline, promptConfig, kernel);
+// Prompt template config
+var promptConfig = new PromptTemplateConfig
+{
+    Completion =
+    {
+        MaxTokens = 1000, Temperature = 0.2, TopP = 0.5,
+    }
+};
+
+// Create prompt template
+var promptTemplate = new PromptTemplate(
+    mySemanticFunctionInline, promptConfig, kernel
+);
+
+// Create semantic function config
 var functionConfig = new SemanticFunctionConfig(promptConfig, promptTemplate);
 var summaryFunction = kernel.RegisterSemanticFunction("MySkill", "Summary", functionConfig);
 
-// Create function input
+// Input for function
 var input = """
             I think with some confidence I can say that 2023 is going to be the most exciting year that
             the AI community has ever had,” writes Kevin Scott, chief technology officer at Microsoft,
@@ -58,6 +60,6 @@ var input = """
             way we work and play.
             """;
 
-// Request and get the result
-var result = await kernel.RunAsync(input, summaryFunction);
-Console.WriteLine(result);
+// Result of function, yay that's it :)
+var summary = await kernel.RunAsync(input, summaryFunction);
+Console.WriteLine(summary);
