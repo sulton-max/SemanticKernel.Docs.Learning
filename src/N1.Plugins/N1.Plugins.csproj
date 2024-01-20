@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <UserSecretsId>6e1fc8d8-979a-4e85-ad7e-28f26fae87da</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.4"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0-preview.7.23375.6"/>
+        <PackageReference Include="Microsoft.SemanticKernel" Version="1.0.0-beta4"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Plugins\" />
+    </ItemGroup>
+
+</Project>

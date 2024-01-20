@@ -1,4 +1,4 @@
-﻿namespace Recipes.N1;
+﻿namespace N2.FirstApp;
 
 public class AzureOpenAiSettings
 {
