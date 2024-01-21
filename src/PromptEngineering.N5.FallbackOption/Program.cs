@@ -41,6 +41,9 @@ var prompt = @"
     User : Let's remind others about today's gathering
     Intent : {{sendEmailExample}}
 
+    User : Send summary of last month's meeting
+    Intent : {{sendEmailExample}}
+
     User : Why it suddenly feels so cold?
     Intent : {{checkWeatherExample}}
 
@@ -48,7 +51,10 @@ var prompt = @"
     Intent : {{checkWeatherExample}}
 
     User : Should I buy a coat ?
-    Intent : {{checkWeatherExample}}
+    Intent : {{fallbackIntent}}
+
+    User : Did anyone replied to the email ?
+    Intent : {{fallbackIntent}}
 
     ## User input
 
@@ -82,6 +88,7 @@ public enum IntentType
 {
     CheckWeather,
     SendEmail,
+    SendMessage,
     Unknown
 }
 
