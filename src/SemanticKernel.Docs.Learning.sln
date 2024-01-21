@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "N1 Fundamentals", "N1 Fundamentals", "{50E7C728-EC85-4EFE-B4F8-E34112B5369A}"
 EndProject
@@ -39,6 +39,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptEngineering.N2.SpecificPrompt", "PromptEngineering.N2.SpecificPrompt\PromptEngineering.N2.SpecificPrompt.csproj", "{049215FD-13C3-4C0C-9B81-8EB0A9B83F3D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptEngineering.N3.FormattedOutput", "PromptEngineering.N3.FormattedOutput\PromptEngineering.N3.FormattedOutput.csproj", "{71DD9F12-6848-426F-BA62-76480C537620}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptEngineering.N4.FewShotPrompting", "PromptEngineering.N4.FewShotPrompting\PromptEngineering.N4.FewShotPrompting.csproj", "{41E0C929-889F-420F-A888-737A12F997C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptEngineering.N5.FallbackOption", "PromptEngineering.N5.FallbackOption\PromptEngineering.N5.FallbackOption.csproj", "{750D8FF5-3729-4923-BB39-44F89E1D9F85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +66,8 @@ Global
 		{4D63027D-9A30-4FBE-A305-4B4570A32F25} = {05A688BA-70D5-4EE9-87B6-0F957A3B996B}
 		{049215FD-13C3-4C0C-9B81-8EB0A9B83F3D} = {05A688BA-70D5-4EE9-87B6-0F957A3B996B}
 		{71DD9F12-6848-426F-BA62-76480C537620} = {05A688BA-70D5-4EE9-87B6-0F957A3B996B}
+		{41E0C929-889F-420F-A888-737A12F997C6} = {05A688BA-70D5-4EE9-87B6-0F957A3B996B}
+		{750D8FF5-3729-4923-BB39-44F89E1D9F85} = {05A688BA-70D5-4EE9-87B6-0F957A3B996B}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{10E6F4C3-6DDF-4506-BF80-1D36FF73875F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -111,5 +118,13 @@ Global
 		{71DD9F12-6848-426F-BA62-76480C537620}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71DD9F12-6848-426F-BA62-76480C537620}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71DD9F12-6848-426F-BA62-76480C537620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41E0C929-889F-420F-A888-737A12F997C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41E0C929-889F-420F-A888-737A12F997C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41E0C929-889F-420F-A888-737A12F997C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41E0C929-889F-420F-A888-737A12F997C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{750D8FF5-3729-4923-BB39-44F89E1D9F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{750D8FF5-3729-4923-BB39-44F89E1D9F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{750D8FF5-3729-4923-BB39-44F89E1D9F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{750D8FF5-3729-4923-BB39-44F89E1D9F85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
