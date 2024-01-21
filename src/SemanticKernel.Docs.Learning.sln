@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "N1 Fundamentals", "N1 Fundamentals", "{50E7C728-EC85-4EFE-B4F8-E34112B5369A}"
 EndProject
@@ -44,6 +44,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptEngineering.N4.FewSho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptEngineering.N5.FallbackOption", "PromptEngineering.N5.FallbackOption\PromptEngineering.N5.FallbackOption.csproj", "{750D8FF5-3729-4923-BB39-44F89E1D9F85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptEngineering.N6.PromptContext", "PromptEngineering.N6.PromptContext\PromptEngineering.N6.PromptContext.csproj", "{724AF51B-89AA-44FC-B54D-2237BB3A4792}"
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -126,5 +127,9 @@ Global
 		{750D8FF5-3729-4923-BB39-44F89E1D9F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{750D8FF5-3729-4923-BB39-44F89E1D9F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{750D8FF5-3729-4923-BB39-44F89E1D9F85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{724AF51B-89AA-44FC-B54D-2237BB3A4792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{724AF51B-89AA-44FC-B54D-2237BB3A4792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{724AF51B-89AA-44FC-B54D-2237BB3A4792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{724AF51B-89AA-44FC-B54D-2237BB3A4792}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
