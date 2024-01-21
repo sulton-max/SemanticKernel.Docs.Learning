@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>GettingStarted.N3.SemanticSkills</RootNamespace>
+        <UserSecretsId>c2ae7367-55cc-422c-9257-357a4e409f3b</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Plugins\" />
+      <Folder Include="Plugins\FunPlugin\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />
+        <PackageReference Include="Microsoft.SemanticKernel" Version="1.1.0" />
+    </ItemGroup>
+
+</Project>

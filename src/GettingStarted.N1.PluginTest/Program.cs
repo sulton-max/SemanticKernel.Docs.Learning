@@ -1,5 +1,4 @@
 ﻿using GettingStarted.N1.PluginTest.Plugins;
-using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;

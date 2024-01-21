@@ -16,7 +16,7 @@ var kernel = kernelBuilder.Build();
 
 // get parent folder from executing folder
 var projectFolder = Directory.GetParent(Directory.GetCurrentDirectory())!.Parent!.Parent;
-var skillsFolder = Path.Combine(projectFolder!.FullName, "Skills");
+var skillsFolder = Path.Combine(projectFolder!.FullName, "Plugins");
 
 var skills = new[]
 {
