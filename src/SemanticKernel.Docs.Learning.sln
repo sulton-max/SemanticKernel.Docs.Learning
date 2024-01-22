@@ -54,6 +54,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptEngineering.N9.Templa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptEngineering.N10.HandleBarTemplate", "PromptEngineering.N10.HandleBarTemplate\PromptEngineering.N10.HandleBarTemplate.csproj", "{EEBC7B03-8C79-4D36-B9D0-EF00385BBF95}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptEngineering.N11.NestedFunctions", "PromptEngineering.N11.NestedFunctions\PromptEngineering.N11.NestedFunctions.csproj", "{32BC7FA9-D8D6-4D24-8292-4E26EDEC534E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,7 @@ Global
 		{CF65798F-9699-4078-8B7E-66BDFDCDD8BE} = {05A688BA-70D5-4EE9-87B6-0F957A3B996B}
 		{A0DBF066-D3F1-4350-B59C-6315C12992CA} = {05A688BA-70D5-4EE9-87B6-0F957A3B996B}
 		{EEBC7B03-8C79-4D36-B9D0-EF00385BBF95} = {05A688BA-70D5-4EE9-87B6-0F957A3B996B}
+		{32BC7FA9-D8D6-4D24-8292-4E26EDEC534E} = {05A688BA-70D5-4EE9-87B6-0F957A3B996B}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{10E6F4C3-6DDF-4506-BF80-1D36FF73875F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -161,5 +164,9 @@ Global
 		{EEBC7B03-8C79-4D36-B9D0-EF00385BBF95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEBC7B03-8C79-4D36-B9D0-EF00385BBF95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEBC7B03-8C79-4D36-B9D0-EF00385BBF95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32BC7FA9-D8D6-4D24-8292-4E26EDEC534E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32BC7FA9-D8D6-4D24-8292-4E26EDEC534E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32BC7FA9-D8D6-4D24-8292-4E26EDEC534E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32BC7FA9-D8D6-4D24-8292-4E26EDEC534E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
