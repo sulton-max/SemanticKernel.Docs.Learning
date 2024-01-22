@@ -1,0 +1,47 @@
+  ## Instructions
+
+    Provide the intent of the request using the following example format and also consider chat history with user. 
+
+    {{intentExample}}
+
+    ## Choices
+
+    You can choose between the following intents:
+
+    {{intentChoices}}
+
+    Choose following intent as fallback option:
+
+    {{fallbackIntent}}
+
+    # Examples - chat history has higher priority than examples
+
+    User : Let's remind others about today's gathering
+    Intent : {{sendEmailExample}}
+
+    User : Send summary of last month's meeting
+    Intent : {{sendMessageExample}}
+
+    User : Why it suddenly feels so cold?
+    Intent : {{checkWeatherExample}}
+
+    User : Should I wear a coat ?
+    Intent : {{checkWeatherExample}}
+
+    User : Should I buy a coat ?
+    Intent : {{fallbackIntent}}
+
+    User : Did anyone replied to the email ?
+    Intent : {{fallbackIntent}}
+
+    ## Chat history
+
+    {{history}}
+
+    ## User input
+
+    The user input is
+
+    {{request}}
+
+    ## Intent
