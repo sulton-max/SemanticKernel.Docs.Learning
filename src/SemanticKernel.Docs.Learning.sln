@@ -48,6 +48,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptEngineering.N6.Prompt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptEngineering.N7.MessageRole", "PromptEngineering.N7.MessageRole\PromptEngineering.N7.MessageRole.csproj", "{42AAFF65-4213-4167-BF5C-74091CFCEA5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptEngineering.N8.Encouragement", "PromptEngineering.N8.Encouragement\PromptEngineering.N8.Encouragement.csproj", "{CF65798F-9699-4078-8B7E-66BDFDCDD8BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,7 @@ Global
 		{750D8FF5-3729-4923-BB39-44F89E1D9F85} = {05A688BA-70D5-4EE9-87B6-0F957A3B996B}
 		{724AF51B-89AA-44FC-B54D-2237BB3A4792} = {05A688BA-70D5-4EE9-87B6-0F957A3B996B}
 		{42AAFF65-4213-4167-BF5C-74091CFCEA5D} = {05A688BA-70D5-4EE9-87B6-0F957A3B996B}
+		{CF65798F-9699-4078-8B7E-66BDFDCDD8BE} = {05A688BA-70D5-4EE9-87B6-0F957A3B996B}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{10E6F4C3-6DDF-4506-BF80-1D36FF73875F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -140,5 +143,9 @@ Global
 		{42AAFF65-4213-4167-BF5C-74091CFCEA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42AAFF65-4213-4167-BF5C-74091CFCEA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42AAFF65-4213-4167-BF5C-74091CFCEA5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF65798F-9699-4078-8B7E-66BDFDCDD8BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF65798F-9699-4078-8B7E-66BDFDCDD8BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF65798F-9699-4078-8B7E-66BDFDCDD8BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF65798F-9699-4078-8B7E-66BDFDCDD8BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
