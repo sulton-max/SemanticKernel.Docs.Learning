@@ -43,15 +43,13 @@ var templateConfig = new PromptTemplateConfig
                        Choose following intent as fallback option:
                        {{fallbackIntent}}
                    </message>
-               
-                   <message role=""system"">
-                       Examples - chat history has higher priority than examples
-               
-                       {{#each examples}}
-                            {{#each this}}
-                                <message role=""{{role}}"">{{content}}</message>
-                            {{/each}}
-                       {{/each}}
+                   Examples - chat history has higher priority than examples
+
+                   {{#each examples}}
+                        {{#each this}}
+                            <message role=""{{role}}"">{{content}}</message>
+                        {{/each}}
+                   {{/each}}
                    </message>
                    <message role=""system"">
                        Chat history : {{ConversationSummaryPlugin-SummarizeConversation history}}
